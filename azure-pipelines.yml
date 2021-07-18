@@ -14,4 +14,4 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      Write-Host "Hello World"
+      Write-Host ${env:MESSAGE}
