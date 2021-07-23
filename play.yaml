@@ -1,8 +1,8 @@
 -
-  name: 'Install pandas with pip"
-  hosts: TargetMachi
+  name: Install latest pip
+  hosts: TargetMachine
   tasks:
-    - name: 'Install pandas'
-      pip: 
-        name: pandas
-        state: present
+    - name: Upgrade pip
+      sudo: 
+        name: pip
+        state: latest
