@@ -12,8 +12,11 @@ pool:
 steps:
 - task: Ansible@0
   inputs:
-    ansibleInterface: 'agentMachine'
-    playbookPathOnAgentMachine: './play.yaml'
-    inventoriesAgentMachine: 'file'
-    inventoryFileOnAgentMachine: './inventory'
+    ansibleInterface: 'remoteMachine'
+    connectionOverSsh: 'AnsibleConnection'
+    playbookSourceRemoteMachine: 'ansibleMachine'
+    playbookPathAnsibleMachineOnRemoteMachine: './play.yaml'
+    inventoriesRemoteMachine: 'file'
+    inventoryFileSourceRemoteMachine: 'agentMachine'
+    inventoryFileLinkedArtifactOnRemoteMachine: './inventory'
     args: --extra-vars package=$(DEPENDENCY)
