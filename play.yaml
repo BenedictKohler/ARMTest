@@ -3,6 +3,6 @@
   hosts: TargetMachine
   tasks:
     - name: Upgrade pip
-      sudo: 
-        name: pip
-        state: latest
+      yum: 
+        name: httpd
+        state: present
