@@ -2,5 +2,9 @@
   name: 'Install pandas with pip"
   hosts: TargetMachine
   tasks:
-    -
-      pip: 'name=pandas state=present'
+    - name: 'Install pandas'
+      pip: 
+        name: pandas
+        state: present
+      
+      'name=pandas state=present'
