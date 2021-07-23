@@ -1,0 +1,2 @@
+[TargetMachine]
+40.80.147.71 ansible_user=azureuser

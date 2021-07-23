@@ -1,1 +1,0 @@
-remote_host ansible_host=sql01.xyz.com ansible_connection=ssh ansible_user=root ansible_ssh_pass=Lin$Pass
