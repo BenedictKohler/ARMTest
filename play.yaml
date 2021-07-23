@@ -1,6 +1,6 @@
 -
   name: 'Install pandas with pip"
-  hosts: remote_host
+  hosts: TargetMachine
   tasks:
     -
       pip: 'name=pandas state=present'
