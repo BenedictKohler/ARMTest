@@ -1,0 +1,6 @@
+-
+  name: 'Install axios with npm"
+  hosts: remote_host
+  tasks:
+    -
+      npm: 'name=axios state=present'
