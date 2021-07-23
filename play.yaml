@@ -1,6 +1,6 @@
 -
-  name: 'Install axios with npm"
+  name: 'Install pandas with pip"
   hosts: remote_host
   tasks:
     -
-      npm: 'name=axios state=present'
+      pip: 'name=pandas state=present'
