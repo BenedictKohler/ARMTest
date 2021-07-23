@@ -10,6 +10,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: Bash@3
+- task: Ansible@0
   inputs:
-    filePath: './Hello.sh'
+    ansibleInterface: 'agentMachine'
+    playbookPathOnAgentMachine: './play.yaml'
+    inventoriesAgentMachine: 'file'
+    inventoryFileOnAgentMachine: './inventory'
