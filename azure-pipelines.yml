@@ -16,3 +16,4 @@ steps:
     playbookPathOnAgentMachine: './play.yaml'
     inventoriesAgentMachine: 'file'
     inventoryFileOnAgentMachine: './inventory'
+    args: --extra-vars package=$(DEPENDENCY)
