@@ -1,8 +1,8 @@
 -
-  name: Install latest pip
+  name: Install httpd
   hosts: TargetMachine
   tasks:
-    - name: Upgrade pip
+    - name: Install httpd
       yum: 
-        name: httpd
+        name: {{ package }}
         state: present
